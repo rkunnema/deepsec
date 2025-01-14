@@ -5,6 +5,7 @@ fun mac/2.
 free c.
 
 free Error_6300.
+free Error_6A80.
 free get_challenge.
 
 fun senc/2.
@@ -40,7 +41,7 @@ let passport(k_e,k_m) =
         	new k_t;
         	let z = senc((n_t,xn_r,k_t),k_e) in
         	out(c,(z,mac(z,k_m)))
-        ) else out(c,Error_6300)
+        ) else out(c,Error_6A80)
       else out(c,Error_6300)
     else out(c,Error_6300).
 
