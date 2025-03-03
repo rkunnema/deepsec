@@ -32,5 +32,6 @@ Automated verification has become an essential part in the security evaluation o
         legacyPackages = scope.overrideScope overlay;
 
         defaultPackage = self.legacyPackages.${system}.${package};
+
       });
 }
